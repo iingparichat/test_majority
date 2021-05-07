@@ -6,14 +6,13 @@ def majority(arr, n):
     print(n)
     print(arr)
     count = Counter(arr)
+    print('Output')
     for k, v in count.items():
-        print('Output')
         if v > n/2:
             print(k)
             return k
-        else:
-            print(-1)
-            return -1
+    print(-1)
+    return -1
 
 if __name__ == '__main__':
     arr = str(sys.argv[2])
